@@ -1,0 +1,13 @@
+title: Critical Conversations
+tagline: ""
+description: ""
+baseurl: ""
+
+markdown: kramdown
+exclude:
+  - node_modules
+  - package.json
+  - gulpfile.js
+  - yarn.lock
+  - README.md
+  - "*.log"

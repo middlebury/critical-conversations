@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{{site.title}}</title>
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/83898/6016792/css/fonts.css" />
+	<script src="https://use.fontawesome.com/2ac04e12ec.js"></script>
+</head>
+<body>
+	<div id="content">
+		{% include header.html %}
+		{% if page.title or page.description %}
+		<div class="banner-wrapper" role="banner">
+			<div class="banner-text-wrapper background-blue-fix">
+				<div class="banner-text">
+					{% if page.title %}
+						<h1>{{page.title}}</h1>
+					{% endif %}
+					<div class="text-wrapper{% if page.title %} neg-margin{% endif %}">
+						<div class="border">
+						</div>
+						<p>
+							{{page.description}}
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="banner-art-wrapper{% if page.image_gray %} background-grey-fix{% endif %}">
+				<div class="banner-spot art-fix">
+					<img src="/images/{{page.image}}" alt="{{page.image_alt}}">
+				</div>
+			</div>
+		</div>
+		{% endif %}
+		<div class="main-wrapper" role="main">
+			{{content}}
+		</div>
+  </div>
+  {% include footer.html %}
+	<script src="/js/index.js"></script>
+</body>
+</html>
