@@ -12,25 +12,24 @@
 	<div id="content">
 		{% include header.html %}
 		{% if page.title or page.description %}
-		<div class="banner-wrapper" role="banner">
-			<div class="banner-text-wrapper background-blue-fix">
-				<div class="banner-text">
-					<div class="text-wrapper">
+
+		<div class="banner{% if page.home %} banner--home{% endif %}" role="banner">
+			<div class="container">
+
+				<div class="banner-row">
+					<div class="banner-body">
 						{% if page.title %}
-							<h1>{{page.title}}</h1>
+							<h1 class="banner-title">{{page.title}}</h1>
 						{% endif %}
-						<div class="border">
-						</div>
-						<p>
-							{{page.description}}
-						</p>
+						<div class="border"></div>
+						<p class="banner-text">{{page.description}}</p>
+					</div>
+
+					<div class="banner-media">
+						<img src="{{site.baseurl}}/images/{{page.image}}" alt="{{page.image_alt}}">
 					</div>
 				</div>
-			</div>
-			<div class="banner-art-wrapper{% if page.image_gray %} background-grey-fix{% endif %}">
-				<div class="banner-spot art-fix">
-					<img src="{{site.baseurl}}/images/{{page.image}}" alt="{{page.image_alt}}">
-				</div>
+
 			</div>
 		</div>
 		{% endif %}

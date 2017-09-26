@@ -1,5 +1,7 @@
 @import '../node_modules/normalize.css/normalize';
 
+@import 'banner';
+
 /******************************************
 /* SETUP
 /*******************************************/
@@ -131,16 +133,6 @@ h5 {
 .menu-wrapper {
   padding: 0.5em 0;
   border-top: 1px solid white;
-}
-
-.banner-wrapper {
-}
-
-.header-wrapper,
-.banner {
-  max-width: 1198px;
-  margin: 0 auto;
-  padding: 0 0.88em;
 }
 
 .col-wrapper,
@@ -303,70 +295,6 @@ h5 {
   height: 2.5em;
   text-indent: -9999px;
   background-size: contain;
-}
-
-/******************************************
-/* BANNER
-/*******************************************/
-
-.banner-text h1 {
-  font-family: 'Whitney A', 'Whitney B', Helvetica, Arial, sans-serif;
-  font-weight: 600;
-  background-color: #0d395f;
-  color: #fff;
-  font-size: 2em;
-  padding: 0 0 0.5em;
-  margin: 0;
-}
-
-.banner-text-wrapper {
-  background-color: #0d395f;
-  padding: 0 0.88em 12.78em;
-}
-
-.banner-text {
-  max-width: 46.44em; //old: 1198px;
-  margin: 0 auto;
-}
-
-.banner-text p {
-  font-family: 'Sentinel A', 'Sentinel B', Georgia, Times, 'Times New Roman',
-    serif;
-  font-weight: 400;
-  background-color: #0d395f;
-  color: #fff;
-  margin: 0.67em 0;
-  line-height: 1.2em;
-  font-size: 1.33em; //24px
-}
-
-.banner-art-wrapper {
-  width: 100%;
-  padding: 0 0.88em;
-  margin-top: -12.78em;
-}
-
-.banner-art,
-.banner-spot {
-  margin: 0 auto;
-  width: 100%;
-  height: 250px;
-  display: block;
-  max-width: 46.44em; //836px
-}
-
-.banner-art img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  float: left;
-}
-
-.banner-spot img {
-  display: block;
-  max-width: 100%;
-  float: left;
 }
 
 /******************************************
@@ -871,15 +799,8 @@ figure.info-photo {
   }
 
   .header-wrapper,
-  .banner,
   .footer-wrapper {
     padding: 0 1.78em;
-  }
-
-  .banner-text-wrapper,
-  .banner-art-wrapper {
-    padding-left: 1.78em;
-    padding-right: 1.78em;
   }
 
   .text-wrapper {
@@ -889,11 +810,6 @@ figure.info-photo {
 
   .neg-margin {
     margin-top: -3.78em;
-  }
-
-  .banner-art,
-  .banner-spot {
-    height: 325px;
   }
 
   .main-wrapper p,
@@ -1033,11 +949,6 @@ figure.info-photo {
     display: none;
   }
 
-  .banner-art,
-  .banner-spot {
-    height: 400px;
-  }
-
   .table-wrapper th,
   .table-wrapper td {
     padding: 0.5em 1em;
@@ -1063,20 +974,6 @@ figure.info-photo {
   }
   .menu li {
     font-size: 1em;
-  }
-
-  .banner-text {
-    max-width: 49.88em;
-  }
-
-  .banner-art {
-    height: 425px;
-    max-width: 50em; //900
-  }
-
-  .banner-spot {
-    height: 400px;
-    max-width: 49.88em; //836px
   }
 
   .main-body {
