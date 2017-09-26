@@ -1,0 +1,49 @@
+- title: Articles and Books
+  sections: 
+    - title: Books
+      items: 
+      - title: The Dying Art of Disagreement
+        text: do we want a blurb here?
+        source: nytimes.com
+        link: https://mobile.nytimes.com/2017/09/24/opinion/dying-art-of-disagreement.html?emc=eta1&_r=0&referer=
+      - title: The Dying Art of Disagreement
+        text: do we want a blurb here?
+        source: nytimes.com
+        link: https://mobile.nytimes.com/2017/09/24/opinion/dying-art-of-disagreement.html?emc=eta1&_r=0&referer=
+      - title: The Dying Art of Disagreement
+        text: do we want a blurb here?
+        source: nytimes.com
+        link: https://mobile.nytimes.com/2017/09/24/opinion/dying-art-of-disagreement.html?emc=eta1&_r=0&referer=
+      - title: The Dying Art of Disagreement
+        text: do we want a blurb here?
+        source: nytimes.com
+        link: https://mobile.nytimes.com/2017/09/24/opinion/dying-art-of-disagreement.html?emc=eta1&_r=0&referer=
+      - title: The Dying Art of Disagreement
+        text: do we want a blurb here?
+        source: nytimes.com
+        link: https://mobile.nytimes.com/2017/09/24/opinion/dying-art-of-disagreement.html?emc=eta1&_r=0&referer=
+      - title: The Dying Art of Disagreement
+        text: do we want a blurb here?
+        source: nytimes.com
+        link: https://mobile.nytimes.com/2017/09/24/opinion/dying-art-of-disagreement.html?emc=eta1&_r=0&referer=
+      - title: The Dying Art of Disagreement
+        text: do we want a blurb here?
+        source: nytimes.com
+        link: https://mobile.nytimes.com/2017/09/24/opinion/dying-art-of-disagreement.html?emc=eta1&_r=0&referer=
+      - title: The Dying Art of Disagreement
+        text: do we want a blurb here?
+        source: nytimes.com
+        link: https://mobile.nytimes.com/2017/09/24/opinion/dying-art-of-disagreement.html?emc=eta1&_r=0&referer=
+    - title: Articles
+      items: 
+      - title: Free Speech on Campus
+        text: do we want a blurb here?
+        source: Yale University Press
+        link: https://yalebooks.yale.edu/book/9780300226560/free-speech-campus
+
+- title: Reports
+  items: 
+  - title: Free Speech on Campus
+    text: do we want a blurb here?
+    source: Yale University Press
+    link: https://yalebooks.yale.edu/book/9780300226560/free-speech-campus
