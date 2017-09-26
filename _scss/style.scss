@@ -6,8 +6,6 @@
 
 /* Box Model Hack */
 * {
-  -moz-box-sizing: border-box; /* Firexfox */
-  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
   box-sizing: border-box; /* IE */
 }
 
@@ -54,8 +52,6 @@ a {
   text-decoration: none;
   opacity: 1;
   transition: color 0.25s ease-in-out;
-  -moz-transition: color 0.25s ease-in-out;
-  -webkit-transition: color 0.25s ease-in-out;
 }
 
 h1,
@@ -155,8 +151,6 @@ h5 {
   margin-right: 0;
   margin-bottom: 1em;
   background-color: #ffffff;
-  -webkit-box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.15);
   text-align: center;
 }
@@ -171,15 +165,11 @@ h5 {
   margin-right: 0;
   margin-bottom: 3em;
   background-color: #ffffff;
-  -webkit-box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* Removes shadow or Featured Partners */
 .no-shadow {
-  -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
-  -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
 }
 
@@ -239,9 +229,6 @@ h5 {
   margin: 0;
   height: 0;
   overflow: hidden;
-  -webkit-transition: all 300ms ease;
-  -moz-transition: all 300ms ease;
-  -o-transition: all 300ms ease;
   transition: all 300ms ease;
 }
 
@@ -274,8 +261,6 @@ h5 {
   border-bottom: 1px solid transparent;
   opacity: 1;
   transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
-  -webkit-transition: all 0.25s ease-in-out;
 }
 
 .menu li a:hover {
@@ -434,8 +419,6 @@ h5 {
   text-decoration: none;
   opacity: 1;
   transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
-  -webkit-transition: all 0.25s ease-in-out;
 }
 
 .main-wrapper a:hover {
@@ -444,9 +427,6 @@ h5 {
 }
 
 .row-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -465,8 +445,6 @@ h5 {
   padding: 1.11em;
   margin-bottom: 4.44em;
   background-color: #ffffff;
-  -webkit-box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.15);
   text-align: center;
   display: flex;
@@ -500,8 +478,6 @@ h5 {
   font-weight: 600;
   margin: 0.5em 0;
   transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
-  -webkit-transition: all 0.25s ease-in-out;
 }
 
 a.more-button {
@@ -514,8 +490,6 @@ a.more-button {
   color: #007d9e;
   border: 2px solid #007d9e;
   transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
-  -webkit-transition: all 0.25s ease-in-out;
 }
 
 a.div-link {
@@ -535,8 +509,6 @@ a.div-link {
   background-color: #007d9e;
   color: #ffffff;
   transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
-  -webkit-transition: all 0.25s ease-in-out;
 }
 
 .div-link:hover .pdf {
@@ -646,7 +618,6 @@ ul.about-home li p {
 }
 
 img.logo {
-  -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   max-width: 150px;
   width: 100%;
@@ -711,9 +682,6 @@ div.event-info > p > strong {
 
 .form-wrapper input.form-button {
   padding: 2px 6px 3px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -webkit-border-radius: 0;
 }
 
 .form-wrapper .form-button {
