@@ -1,6 +1,6 @@
 <div class="col-1">
   <div class="event-wrapper col-wrapper">
-    <h3>{{include.event.title}}</h3>
+    <h3 id="{{include.event.title | slugify}}">{{include.event.title}}</h3>
     <div class="event-info">
       <p>
       <b>{{include.event.date}} | {{include.event.time}}</b> <br/>
