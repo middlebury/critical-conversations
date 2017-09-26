@@ -21,23 +21,30 @@ image_gray: true
 					{% for subsection in section.sections %}
 
 						<h5 class="text-center">{{subsection.title}}</h5>
-						<div class="row-wrapper">
 
-							{% for item in subsection.items %}
 
-								<div class="col-3-1 div-link {% cycle '', '', 'mr-0' %}">
-									<a href="{{item.link}}">
-										<div class="col-wrapper">
-											<h4>{{item.title}}</h4>
-											<p>{{item.text}}</p>
-											<p class="source">{{item.source}}</p>
-										</div>
-									</a>
+						{% for item in subsection.items %}
+							{% capture modulo %}{{ forloop.index0 | mod:3 }}{% endcapture %}
+
+							{% if modulo == '0' or forloop.first %}
+								<div class="row-wrapper">
+							{% endif %}
+
+							<div class="col-3-1 div-link">
+								<a href="{{item.link}}">
+									<div class="col-wrapper">
+										<h4>{{item.title}}</h4>
+										<p>{{item.text}}</p>
+										<p class="source">{{item.source}}</p>
+									</div>
+								</a>
+							</div>
+
+							{% if modulo == '2' or forloop.last %}
 								</div>
+							{% endif %}
 
-							{% endfor %}
-
-						</div>
+						{% endfor %}
 
 					{% endfor %}
 
