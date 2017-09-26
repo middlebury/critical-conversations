@@ -18,3 +18,15 @@ image_gray: true
 		</div>
 	</div>
 </section>
+
+<section>
+	<span class="section-hed">Past events</span>
+	<div class="border center"></div>
+	<div class="fullwidth bg-fill">
+		<div class="inner main-body">
+			{% for event in site.data.past_events %}
+				{% include event.html event=event %}
+			{% endfor %}
+		</div>
+	</div>
+</section>
