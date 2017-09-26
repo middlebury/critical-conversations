@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>{{site.title}}</title>
 	 <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="{{site.baseurl}}/css/style.css?{{site.time | date: '%s%N'}}">
 	<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/83898/6016792/css/fonts.css" />
 	<script src="https://use.fontawesome.com/2ac04e12ec.js"></script>
 </head>
@@ -29,7 +29,7 @@
 			</div>
 			<div class="banner-art-wrapper{% if page.image_gray %} background-grey-fix{% endif %}">
 				<div class="banner-spot art-fix">
-					<img src="/images/{{page.image}}" alt="{{page.image_alt}}">
+					<img src="{{site.baseurl}}/images/{{page.image}}" alt="{{page.image_alt}}">
 				</div>
 			</div>
 		</div>
@@ -39,6 +39,6 @@
 		</div>
   </div>
   {% include footer.html %}
-	<script src="/js/index.js"></script>
+	<script src="{{site.baseurl}}/js/index.js?{{site.time | date: '%s%N'}}"></script>
 </body>
 </html>
