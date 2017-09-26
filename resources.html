@@ -8,117 +8,61 @@ image_gray: true
 ---
 
 <br>
-<section>
-	<span class="section-hed">Articles and Books</span>
-	<div class="border center">
-	</div>
-	<div class="fullwidth bg-fill">
-		<div class="inner">
-			<h5 class="text-center">Articles</h5>
-			<div class="row-wrapper" role="row">
-					<div class="col-3-1 div-link">
-						<a href="https://mobile.nytimes.com/2017/09/24/opinion/dying-art-of-disagreement.html?emc=eta1&_r=0&referer=">
-							<div class="col-wrapper">
-								<h4>The Dying Art of Disagreement</h4>
-								<p>Do we want a blurb here?</p>
-								<p class="source">nytimes.com</p>
+
+{% for section in site.data.resources %}
+
+	<section>
+		<span class="section-hed">{{section.title}}</span>
+		<div class="border center"></div>
+		<div class="fullwidth bg-fill">
+			<div class="inner">
+				{% if section.sections %}
+
+					{% for subsection in section.sections %}
+
+						<h5 class="text-center">{{subsection.title}}</h5>
+						<div class="row-wrapper">
+
+							{% for item in subsection.items %}
+
+								<div class="col-3-1 div-link {% cycle '', '', 'mr-0' %}">
+									<a href="{{item.link}}">
+										<div class="col-wrapper">
+											<h4>{{item.title}}</h4>
+											<p>{{item.text}}</p>
+											<p class="source">{{item.source}}</p>
+										</div>
+									</a>
+								</div>
+
+							{% endfor %}
+
+						</div>
+
+					{% endfor %}
+
+				{% elsif section.items %}
+
+					<div class="row-wrapper" role="row">
+						{% for item in section.items %}
+
+							<div class="col-3-1 div-link">
+								<a href="{{item.link}}">
+									<div class="col-wrapper">
+										<h4>{{item.title}}</h4>
+										<p>{{item.text}}</p>
+										<p class="source">{{item.source}}</p>
+									</div>
+								</a>
 							</div>
-						</a>
+
+						{% endfor %}
 					</div>
-				<div class="col-3-1 div-link">
-					<a href="https://www.wsj.com/articles/the-right-way-to-protect-free-speech-on-campus-1497019583">
-						<div class="col-wrapper" role="row">
-							<h4>The Right Way to Protect Free Speech on Campus</h4>
-							<p>Do we want a blurb here?</p>
-							<p class="source">wsj.com</p>
-						</div>
-					</a>
-				</div>
-				<div class="col-3-1 div-link">
-					<a href="https://www.theatlantic.com/education/archive/2017/07/why-its-a-bad-idea-to-tell-students-words-are-violence/533970/">
-						<div class="col-wrapper" role="row">
-							<h4>Why It's a Bad Idea to Tell Students Words Are Violence</h4>
-							<p>Do we want a blurb here?</p>
-							<p class="source">theatlantic.com</p>
-						</div>
-					</a>
-				</div>
-			</div>
-			<!-- <h5 class="text-center">Co-curricular</h5> -->
-			<div class="row-wrapper">
-				<div class="col-3-1 div-link">
-					<a href="https://www.nytimes.com/2017/08/17/opinion/aclu-first-amendment-trump-charlottesville.html?_r=0">
-						<div class="col-wrapper" role="row">
-							<h4>The A.C.L.U. Needs to Rethink Free Speech</h4>
-							<p>Do we want a blurb here?</p>
-							<p class="source">nytimes.com</p>
-						</div>
-					</a>
-				</div>
-				<div class="col-3-1 div-link">
-					<a href="https://www.nytimes.com/2017/04/24/opinion/what-liberal-snowflakes-get-right-about-free-speech.html?mcubz=1
-">
-						<div class="col-wrapper" role="row">
-							<h4>What 'Snowflakes' Get Right About Free Speech</h4>
-							<p>Do we want a blurb here?</p>
-							<p class="source">nytimes.com</p>
-						</div>
-					</a>
-				</div>
-			</div>
 
-			<h5 class="text-center">Books</h5>
-			<div class="row-wrapper">
-				<div class="col-3-1 div-link">
-					<a href="https://yalebooks.yale.edu/book/9780300226560/free-speech-campus">
-						<div class="col-wrapper" role="row">
-							<h4>Free Speech on Campus</h4>
-							<p>Do we want a blurb here?</p>
-							<p class="source">Yale University Press</p>
-						</div>
-					</a>
-				</div>
-				<div class="col-3-1 div-link">
-					<a href="http://www.upenn.edu/pennpress/book/15762.html">
-						<div class="col-wrapper" role="row">
-							<h4>Free Speech on Campus</h4>
-							<p>Do we want a blurb here?</p>
-							<p class="source">University of Pennsylvania Press</p>
-						</div>
-					</a>
-				</div>
-				<div class="col-3-1 div-link">
-					<a href="https://mitpress.mit.edu/books/safe-spaces-brave-spaces">
-						<div class="col-wrapper" role="row">
-							<h4>Safe Spaces, Brave Spaces</h4>
-							<p>Do we want a blurb here?</p>
-							<p class="source">MIT Press</p>
-						</div>
-					</a>
-				</div>
+				{% endif %}
+
 			</div>
 		</div>
-	</div>
-</section>
+	</section>
 
-<section>
-	<span class="section-hed">Reports</span>
-	<div class="border center">
-	</div>
-	<div class="fullwidth bg-fill">
-		<div class="inner">
-			<div class="row-wrapper" role="row">
-				<div class="col-3-1 div-link">
-					<a href="https://pen.org/and-campus-for-all-diversity-inclusion-and-free-speech-at-u-s-universities/
-">
-						<div class="col-wrapper">
-							<h4>And Campus for All: Diversity, Inclusion, and Free Speech at U.S. Universities</h4>
-							<p>Do we want a blurb here?</p>
-							<p class="source">PEN America</p>
-						</div>
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+{% endfor %}
