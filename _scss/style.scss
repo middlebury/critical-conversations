@@ -213,6 +213,14 @@ h5 {
   color: #0d395f;
 }
 
+.site-tagline {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  padding-top: 4px;
+}
+
 /* Menu */
 
 .menu-open,
@@ -672,6 +680,10 @@ div.event-info > p > strong {
   color: #007c9e;
 }
 
+.mr-0 {
+  margin-right: 0;
+}
+
 /* Form */
 
 .form-wrapper {
@@ -1080,8 +1092,4 @@ figure.info-photo {
   ul.speakers li p {
     overflow: hidden;
   }
-}
-
-.mr-0 {
-  margin-right: 0;
 }
