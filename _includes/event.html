@@ -1,17 +1,20 @@
 <div class="col-1">
   <div class="event-wrapper col-wrapper">
-    <h3>Representing trauma: from Testimony to (Post)memory in my own artistic practice</h3>
+    <h3>{{include.event.title}}</h3>
     <div class="event-info">
       <p>
-      <b>Wednesday, October 4 | 4:30 PM</b> <br/>
-      The Orchard (Room 103), The Franklin Environmental Center at Hillcrest | <a href="http://map.middlebury.edu/map/?id=229&mrkIid=61407">Map</a> <br/>
-      Open to the Public
+      <b>{{include.event.date}} | {{include.event.time}}</b> <br/>
+      {{include.event.location}} | {% if include.event.map_link %}<a href="{{include.event.map_link}}">Map</a>{% endif %} <br/>
+      {% if include.event.public %}Open to the Public{% endif %}
       </p>
+      <p>{{include.event.text}}</p>
       <p>
-      Part of the Carol Rifelj Faculty Lecture Series
-      </p>
-      <p>
-      <b>Speaker:</b> David Miranda-Hardy, Department of Film and Media Culture
+      {% if include.event.speakers %}
+        <b>Speakers:</b>
+        {% for speaker in include.event.speakers %}
+          {{speaker.name}}, {{speaker.title}}
+        {% endfor %}
+      {% endif %}
       </p>
     </div>
   </div>

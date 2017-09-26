@@ -11,8 +11,9 @@ image_gray: true
 	<div class="fullwidth bg-fill">
 		<div class="inner main-body">
 
-			{% include event.html %}
-
+			{% for event in site.data.events %}
+				{% include event.html event=event %}
+			{% endfor %}
 
 		</div>
 	</div>
