@@ -9,14 +9,28 @@
   box-sizing: border-box;
 }
 
+.container {
+  max-width: 1198px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.88em;
+  padding-right: 0.88em;
+
+  @media (min-width: 667px) {
+    padding-left: 1.78em;
+    padding-right: 1.78em;
+  }
+}
+
 /* Clear fix hack */
 .clearfix:after {
-  content: '.';
+  content: '';
   display: block;
   clear: both;
-  visibility: hidden;
-  line-height: 0;
-  height: 0;
+}
+
+.row {
+  @extend .clearfix;
 }
 
 .clear {
@@ -110,6 +124,10 @@ h5 {
   overflow: auto;
 }
 
+.footer-logo {
+  margin-bottom: 2em;
+}
+
 .menu-wrapper {
   padding: 0.5em 0;
   border-top: 1px solid white;
@@ -119,8 +137,7 @@ h5 {
 }
 
 .header-wrapper,
-.banner,
-.footer-wrapper {
+.banner {
   max-width: 1198px;
   margin: 0 auto;
   padding: 0 0.88em;
@@ -177,13 +194,20 @@ h5 {
 /* HEADER
 /*******************************************/
 
-.site-title {
+.header-title {
   float: left;
-  width: 12em;
   overflow: visible;
+  width: 12em;
 }
 
-.site-title h1 {
+.footer-title {
+  overflow: visible;
+  width: 12em;
+  margin-bottom: 2em;
+}
+
+.site-title {
+  display: block;
   color: #0d395f;
   font-family: 'Sentinel A', 'Sentinel B', Georgia, Times, 'Times New Roman',
     serif;
@@ -194,12 +218,12 @@ h5 {
   margin: 0;
 }
 
-.site-title h1 span {
+.site-title span {
   background-color: #fff;
   padding: 0px 5px 5px 8px;
 }
 
-.site-title h1 a {
+.site-title a {
   color: #0d395f;
 }
 
@@ -520,9 +544,9 @@ a.div-link {
 /*******************************************/
 
 .footer-nav-wrapper {
-  width: 100%;
-  float: right;
-  margin: 2em 0 0;
+  // width: 100%;
+  // float: right;
+  // margin: 2em 0 0;
 }
 
 .main-menu,
@@ -1026,11 +1050,11 @@ figure.info-photo {
     width: 57%;
   }
 
-  .site-title {
+  .header-title {
     width: 14.17em;
   }
 
-  .site-title h1 {
+  .site-title {
     font-size: 2em;
   }
 
@@ -1066,4 +1090,18 @@ figure.info-photo {
 
 .mr-0 {
   margin-right: 0;
+}
+
+.footer-brand {
+  @media (min-width: 667px) {
+    float: left;
+    width: 60%;
+  }
+}
+
+.footer-nav {
+  @media (min-width: 667px) {
+    float: right;
+    width: 40%;
+  }
 }

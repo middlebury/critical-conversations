@@ -1,32 +1,41 @@
 <footer class="site-footer" role="contentinfo">
-  <div class="footer-wrapper">
-    <div class="middlebury-logo">
-      <a href="http://www.middlebury.edu">
-        <img class="logo" src="images/mdl_master_left_white.png" alt="middlebury logo">
-      </a>
+  <div class="container">
+
+    <div class="row">
+
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <a href="http://www.middlebury.edu">
+            <img class="logo" src="images/mdl_master_left_white.png" alt="middlebury logo">
+          </a>
+        </div>
+        <div class="footer-title">
+          <h1 class="site-title">
+            <span><a href="index.html">Critical&nbsp; &nbsp;Conversations&nbsp;</a></span>
+          </h1>
+          <p class="site-tagline">{{site.tagline}}</p>
+        </div>
+      </div>
+
+      <div class="footer-nav">
+        <ul class="main-menu">
+          <li><a href="events.html">Events</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="partnerships.html">Partnerships</a></li>
+          <li><a href="engage.html">How to Engage</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+        <ul class="secondary-menu">
+          <li class=""><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
     </div>
-    <div class="site-title">
-      <h1>
-        <span><a href="index.html">Critical&nbsp; &nbsp;Conversations&nbsp;</a></span>
-      </h1>
-      <p class="site-tagline">{{site.tagline}}</p>
+
+    <div class="row">
+      <section class="fineprint">
+        <p>&copy;{{site.time | date: '%Y'}} copyright TBD - speak to Hannah about Creative Commons</p>
+      </section>
     </div>
-    <div class="footer-nav-wrapper">
-      <ul class="main-menu">
-        <li><a href="events.html">Events</a></li>
-        <li><a href="resources.html">Resources</a></li>
-        <li><a href="partnerships.html">Partnerships</a></li>
-        <li><a href="engage.html">How to Engage</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-      <ul class="secondary-menu">
-        <li class=""><a href="#">Contact Us</a></li>
-      </ul>
-    </div>
-    <section class="fineprint">
-      <p>
-      ©2017 copyright TBD - speak to Hannah about Creative Commons 
-      </p>
-    </section>
   </div>
 </footer>
