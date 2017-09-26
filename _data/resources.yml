@@ -1,23 +1,7 @@
 - title: Articles and Books
-  sections: 
-    - title: Books
-      items: 
-      - link: https://yalebooks.yale.edu/book/9780300226560/free-speech-campus
-        title: "Free Speech on Campus"
-        text: Do we want a blurb here?
-        source: Yale University Press
-
-      - link: http://www.upenn.edu/pennpress/book/15762.html
-        title: "Free Speech on Campus"
-        text: Do we want a blurb here?
-        source: University of Pennsylvania Press
-
-      - link: https://mitpress.mit.edu/books/safe-spaces-brave-spaces
-        title: "Safe Spaces, Brave Spaces"
-        text: Do we want a blurb here?
-        source: MIT Press
+  sections:
     - title: Articles
-      items: 
+      items:
       - link: https://mobile.nytimes.com/2017/09/24/opinion/dying-art-of-disagreement.html?emc=eta1&_r=0&referer=
         title: "The Dying Art of Disagreement"
         text: Do we want a blurb here?
@@ -43,8 +27,25 @@
         text: Do we want a blurb here?
         source: nytimes.com
 
+    - title: Books
+      items:
+      - link: https://yalebooks.yale.edu/book/9780300226560/free-speech-campus
+        title: "Free Speech on Campus"
+        text: Do we want a blurb here?
+        source: Yale University Press
+
+      - link: http://www.upenn.edu/pennpress/book/15762.html
+        title: "Free Speech on Campus"
+        text: Do we want a blurb here?
+        source: University of Pennsylvania Press
+
+      - link: https://mitpress.mit.edu/books/safe-spaces-brave-spaces
+        title: "Safe Spaces, Brave Spaces"
+        text: Do we want a blurb here?
+        source: MIT Press
+
 - title: Reports
-  items: 
+  items:
   - title: "And Campus for All: Diversity, Inclusion, and Free Speech at U.S. Universities"
     text: do we want a blurb here?
     source: PEN America
