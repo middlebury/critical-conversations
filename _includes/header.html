@@ -2,7 +2,7 @@
   <div class="container">
     <div class="header-title">
       <h1 class="site-title">
-        <span><a href="index.html">Critical&nbsp; &nbsp;Conversations&nbsp;</a></span>
+        <span><a href="{{site.baseurl}}/">Critical&nbsp; &nbsp;Conversations&nbsp;</a></span>
       </h1>
       <p class="site-tagline">{{site.tagline}}</p>
     </div>
@@ -14,7 +14,7 @@
       <div class="menu-wrapper">
         <ul class="menu">
           {% for item in site.data.nav %}
-            <li class="menu-item"><a href="{{item.link}}">{{item.title}}</a></li>
+            <li class="menu-item"><a href="{{site.baseurl}}{{item.link}}">{{item.title}}</a></li>
           {% endfor %}
           <li class="menu-wordmark">
             <a href="http://www.middlebury.edu" title="Middlebury" target="_blank"><h1>Middlebury</h1></a>
