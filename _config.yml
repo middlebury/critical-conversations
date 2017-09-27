@@ -11,3 +11,5 @@ exclude:
   - yarn.lock
   - README.md
   - "*.log"
+
+permalink: pretty
