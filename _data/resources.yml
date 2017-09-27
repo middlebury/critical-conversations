@@ -4,49 +4,49 @@
       items:
       - link: https://mobile.nytimes.com/2017/09/24/opinion/dying-art-of-disagreement.html?emc=eta1&_r=0&referer=
         title: "The Dying Art of Disagreement"
-        text: Do we want a blurb here?
+        text: By Bret Stephens
         source: nytimes.com
 
       - link: https://www.wsj.com/articles/the-right-way-to-protect-free-speech-on-campus-1497019583
         title: "The Right Way to Protect Free Speech on Campus"
-        text: Do we want a blurb here?
+        text: By Laurie L. Patton
         source: wsj.com
 
       - link: https://www.theatlantic.com/education/archive/2017/07/why-its-a-bad-idea-to-tell-students-words-are-violence/533970/
         title: "Why It's a Bad Idea to Tell Students Words Are Violence"
-        text: Do we want a blurb here?
+        text: By Jonathan Haidt and Greg Lukianoff
         source: theatlantic.com
 
       - link: https://www.nytimes.com/2017/08/17/opinion/aclu-first-amendment-trump-charlottesville.html?_r=0
         title: "The A.C.L.U. Needs to Rethink Free Speech"
-        text: Do we want a blurb here?
+        text: By K-Sue Park
         source: nytimes.com
 
       - link: https://www.nytimes.com/2017/04/24/opinion/what-liberal-snowflakes-get-right-about-free-speech.html?mcubz=1
         title: "What 'Snowflakes' Get Right About Free Speech"
-        text: Do we want a blurb here?
+        text: By Ulrich Baer
         source: nytimes.com
 
     - title: Books
       items:
       - link: https://yalebooks.yale.edu/book/9780300226560/free-speech-campus
         title: "Free Speech on Campus"
-        text: Do we want a blurb here?
+        text: By Erwin Chemerinsky and Howard Gillman
         source: Yale University Press
 
       - link: http://www.upenn.edu/pennpress/book/15762.html
         title: "Free Speech on Campus"
-        text: Do we want a blurb here?
+        text: By Sigal R. Ben-Porath
         source: University of Pennsylvania Press
 
       - link: https://mitpress.mit.edu/books/safe-spaces-brave-spaces
         title: "Safe Spaces, Brave Spaces"
-        text: Do we want a blurb here?
+        text: By John Palfrey
         source: MIT Press
 
 - title: Reports
   items:
   - title: "And Campus for All: Diversity, Inclusion, and Free Speech at U.S. Universities"
-    text: do we want a blurb here?
+    text: <em>And Campus for All</em> combines extensive reporting and thorough analysis of all sides of recent debates...
     source: PEN America
-    link: https://yalebooks.yale.edu/book/9780300226560/free-speech-campus
+    link: https://pen.org/and-campus-for-all-diversity-inclusion-and-free-speech-at-u-s-universities/
