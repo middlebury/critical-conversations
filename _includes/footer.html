@@ -19,11 +19,9 @@
 
       <div class="footer-nav">
         <ul class="main-menu">
-          <li><a href="events.html">Events</a></li>
-          <li><a href="resources.html">Resources</a></li>
-          <li><a href="partnerships.html">Partnerships</a></li>
-          <li><a href="engage.html">How to Engage</a></li>
-          <li><a href="about.html">About</a></li>
+          {% for item in site.data.nav %}
+            <li class="menu-item"><a href="{{item.link}}">{{item.title}}</a></li>
+          {% endfor %}
         </ul>
         <ul class="secondary-menu">
           <li class=""><a href="#">Contact Us</a></li>
