@@ -1,7 +1,7 @@
 title: Critical Conversations
 tagline: Advancing a culture of freedom and inclusivity
 description: ""
-baseurl: "/critical-conversations"
+baseurl: ""
 
 markdown: kramdown
 exclude:
