@@ -103,7 +103,7 @@ gulp.task('styles', function() {
 });
 
 gulp.task('watch', function() {
-  gulp.watch('_js/**/*.js', ['scripts']);
+  // gulp.watch('_js/**/*.js', ['scripts']);
   gulp.watch('_scss/*.scss', ['styles']);
   gulp.watch('_img/**/*.{jpg,png,svg}', ['images']);
   gulp.watch(
@@ -122,7 +122,13 @@ gulp.task('watch', function() {
   );
 });
 
-gulp.task('build', ['jekyll-build', 'scripts', 'styles', 'images']);
+// prettier-ignore
+gulp.task('build', [
+  'jekyll-build',
+  // 'scripts',
+  'styles',
+  'images'
+]);
 
 gulp.task('deploy', function() {
   return gulp.src('./_site/**/*').pipe(
