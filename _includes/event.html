@@ -10,7 +10,7 @@
       {{include.event.text | markdownify}}
       <p>
       {% if include.event.speakers %}
-        <b>Speakers:</b>
+        <b>Speaker:</b>
         {% for speaker in include.event.speakers %}
           {{speaker.name}}, {{speaker.title}}
         {% endfor %}
