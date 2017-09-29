@@ -3,16 +3,24 @@
     <h3 id="{{include.event.title | slugify}}">{{include.event.title}}</h3>
     <div class="event-info">
       <p>
-      <b>{{include.event.date}} | {{include.event.time}}</b> <br/>
-      {{include.event.location}} | {% if include.event.map_link %}<a href="{{include.event.map_link}}">Map</a>{% endif %} <br/>
+      <b>{{include.event.date}}{% if include.event.time %} | {{include.event.time}}{% endif %}</b>
+      {% if include.event.location %}
+      <br/>
+      {% endif %}
+      {{include.event.location}}{% if include.event.map_link %} | <a href="{{include.event.map_link}}">Map</a>{% endif %} <br/>
       {% if include.event.public %}Open to the Public{% endif %}
       </p>
       {{include.event.text | markdownify}}
       <p>
       {% if include.event.speakers %}
-        <b>Speaker:</b>
+        {% assign speaker_count = include.event.speakers | size %}
+        {% if speaker_count > 1 %}
+          <b>Speakers:</b>
+        {% else %}
+          <b>Speaker:</b>
+        {% endif %}
         {% for speaker in include.event.speakers %}
-          {{speaker.name}}, {{speaker.title}}
+          {% if forloop.last and speaker_count > 1 %} and {% endif %}{{speaker.name}}{%if speaker.title %}, {{speaker.title}}{% endif %}{% unless forloop.last %}, {% endunless %}
         {% endfor %}
       {% endif %}
       </p>
