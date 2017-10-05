@@ -7,7 +7,24 @@ image_alt: Events illustration
 image_gray: true
 ---
 
+<br>
 <section>
+	<span class="section-hed">Ongoing series</span>
+	<div class="border center"></div>
+	<div class="fullwidth bg-fill">
+		<div class="inner main-body">
+
+			{% for event in site.data.series_events %}
+				{% include event.html event=event %}
+			{% endfor %}
+
+		</div>
+	</div>
+</section>
+
+<section>
+	<span class="section-hed">Upcoming Events</span>
+	<div class="border center"></div>
 	<div class="fullwidth bg-fill">
 		<div class="inner main-body">
 
