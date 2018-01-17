@@ -22,7 +22,7 @@ const production = !!args.production;
 const jekyllOpts = ['build'];
 
 if (!production) {
-  jekyllOpts.push('--config', '_config.dev.yml');
+  jekyllOpts.push('--baseurl', '');
 }
 
 gulp.task('jekyll-build', function(done) {
