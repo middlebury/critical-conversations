@@ -39,6 +39,9 @@ Perhaps more than anything, Americans need to learn to talk to one another again
             {% if event.public %}
             <br/>Open to the Public
             {% endif %}
+            {% if event.public_text %}
+            <br/>{{event.public_text}}
+            {% endif %}
           </p>
           <p>
             <a href="{{site.baseurl}}/events#{{event.title|slugify}}">View Additional Details</a>

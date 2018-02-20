@@ -9,6 +9,7 @@
       {% endif %}
       {{include.event.location}}{% if include.event.map_link %} | <a href="{{include.event.map_link}}">Map</a>{% endif %} <br/>
       {% if include.event.public %}Open to the Public{% endif %}
+      {% if include.event.public_text %}{{include.event.public_text}}{% endif %}
       </p>
       {{include.event.text | markdownify}}
       <p>
